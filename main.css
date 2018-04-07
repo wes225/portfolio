@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(to bottom, #116cff, #91bbff);
+}
+
+/* Navigation Bar */
+
+nav ul {
+    list-style: none;
+    list-style-type: none;
+}
+
+nav a {
+    outline: none;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    border-top: 3px solid transparent;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-radius: 6px;
+    transition: border .5s;
+    padding: 8px;
+}
+
+nav a:link,
+a:visited,
+a:focus,
+a:active {
+    text-decoration: none
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: white;
+    border: 3px solid white;
+    border-radius: 6px;
+}
+
+/*NavBar Grid setup*/
+
+.navList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 1fr);
+    grid-template-areas: "name_btn . . . . about_btn portfolio_btn contact_btn";
+    grid-gap: 15px;
+    border: 3px solid white;
+    border-radius: 6px;
+    margin-top: 10px;
+    padding-right: 10px;
+}
+
+.listName {
+    color: white;
+    font-size: 30 px;
+    grid-area: name_btn;
+    align-self: center;
+    justify-self: start;
+}
+
+.listAbout {
+    grid-area: about_btn;
+    align-self: center;
+    justify-self: end;
+}
+
+.listPortfo {
+    grid-area: portfolio_btn;
+    align-self: center;
+    justify-self: end;
+}
+
+.listContact {
+    grid-area: contact_btn;
+    align-self: center;
+    justify-self: end;
+}
+
+/*Main Grid for the body elements*/
+
+.pageWrapper {
+    margin-left: 20%;
+    margin-right: 20%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat (5, minmax(100px, 1fr));
+    grid-template-areas: "navbar" "header" "aboutMe" "portfolio" "contact ";
+}
+
+.navbar {
+    align-content: center;
+    grid-area: navbar;
+    align-self: stretch;
+    justify-self: stretch;
+}
+
+.header {
+    grid-area: header;
+    align-self: center;
+    justify-self: center;
+}
+
+.aboutMe {
+    grid-area: aboutMe;
+    align-self: center;
+    justify-self: center;
+}
+
+.portfolio {
+    grid-area: portfolio;
+}
+
+.contact {
+    grid-area: contact;
+}
+
+.portfolioWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+/*Header Style*/
+
+header h3 {
+    color: white;
+}
+
+/*Portfolio Section*/
+
+.portfolio {
+    display:grid;
+    grid-auto-flow:column;
+    grid-gap:15px;
+    border: 3px solid white;
+    border-radius: 6px;
+}
