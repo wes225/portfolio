@@ -11,7 +11,7 @@ body {
     background-attachment: fixed;
     background-image: linear-gradient(to bottom, #000000, #1e2227);
     color: rgba(233, 233, 233, 0.911);
-    font-family: 'IBM Plex Sans',sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 400;
 }
 
@@ -19,9 +19,22 @@ ul {
     list-style: none;
 }
 
+li {
+    display: inline-block;
+    padding: 5px;
+}
+
+a,
+a:hover,
+a:visited,
+a:focus,
+a:active {
+    text-decoration: none;
+}
+
 .wrapper {
     padding: 10px;
-    margin: 20%;
+    margin: 15%;
     box-shadow: 0 0 30px rgba(255, 255, 255, 0.349);
     border: solid white 3px;
     display: grid;
@@ -29,6 +42,7 @@ ul {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: repeat(4, 1fr);
     grid-template-areas: "name name" "job skills" "para skills " "contact contact";
+   
 }
 
 .name {
@@ -39,14 +53,13 @@ ul {
     grid-area: job;
 }
 
-.level{
-    
+.level {
     font-family: 'IBM Plex Sans', sans-serif;
-    font-weight:  200;
+    font-weight: 200;
     font-style: italic;
 }
 
-.paragraph {
+.desc {
     grid-area: para;
     align-self: center;
     justify-self: center;
@@ -65,4 +78,19 @@ ul {
 img {
     height: 50px;
     width: 50px;
+}
+
+@media screen and (max-width: 480px) {
+    .wrapper {
+        display:grid;
+         grid-template-columns: 1fr;
+         grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: "name " "job " "contact ";
+    }
+    .desc {
+        display: none;
+    }
+    .skills {
+        display: none;
+    }
 }
