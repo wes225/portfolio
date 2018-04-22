@@ -6,53 +6,63 @@
     -webkit-box-sizing: border-box;
 }
 
-
-
 body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-image: linear-gradient(to bottom, #000000, #1e2227);
+    color: rgba(233, 233, 233, 0.911);
+    font-family: 'IBM Plex Sans',sans-serif;
+    font-weight: 400;
+}
+
+ul {
+    list-style: none;
 }
 
 .wrapper {
-margin:20%;
-border: solid white 3px;
-display:grid;
-grid-gap: 2px white;
-grid-template-columns: 2fr 1fr;
-grid-template-rows: repeat(4, 1fr);
-grid-template-areas: 
-"name name"
-"job skills"
-"para skills "
-"contact contact";
-
+    padding: 10px;
+    margin: 20%;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.349);
+    border: solid white 3px;
+    display: grid;
+    grid-gap: 2px white;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "name name" "job skills" "para skills " "contact contact";
 }
 
-.name{
-grid-area:name;
+.name {
+    grid-area: name;
 }
-.job{
-grid-area:job;
+
+.job {
+    grid-area: job;
 }
+
 .level{
-font-size: 10px;    
-}
-.paragraph {
-    grid-area:para;
-      align-self: center;
-      justify-self: center;
+    
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight:  200;
+    font-style: italic;
 }
 
-.skills{
-    grid-area:skills;
-}
-.contactSection{
-    grid-area:contact;
+.paragraph {
+    grid-area: para;
     align-self: center;
     justify-self: center;
 }
-img{
-    height:50px;
-    width:50px;
+
+.skills {
+    grid-area: skills;
+}
+
+.contactSection {
+    grid-area: contact;
+    align-self: center;
+    justify-self: center;
+}
+
+img {
+    height: 50px;
+    width: 50px;
 }
