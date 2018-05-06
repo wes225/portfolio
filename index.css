@@ -15,24 +15,9 @@ body {
     font-weight: 400;
 }
 
-ul {
-    list-style: none;
-}
+/*Card and info section*/
 
-li {
-    display: inline-block;
-    padding: 5px;
-}
-
-a,
-a:hover,
-a:visited,
-a:focus,
-a:active {
-    text-decoration: none;
-}
-
-.wrapper {
+.cardWrapper {
     padding: 10px;
     margin: 15%;
     box-shadow: 0 0 30px rgba(255, 255, 255, 0.349);
@@ -42,7 +27,6 @@ a:active {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: repeat(4, 1fr);
     grid-template-areas: "name name" "job skills" "para skills " "contact contact";
-   
 }
 
 .name {
@@ -80,11 +64,29 @@ img {
     width: 50px;
 }
 
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    padding: 5px;
+}
+
+a,
+a:hover,
+a:link,
+a:visited,
+a:focus,
+a:active {
+    text-decoration: none;
+}
+
 @media screen and (max-width: 480px) {
-    .wrapper {
-        display:grid;
-         grid-template-columns: 1fr;
-         grid-template-rows: repeat(3, 1fr);
+    .cardWrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
         grid-template-areas: "name " "job " "contact ";
     }
     .desc {
@@ -93,4 +95,79 @@ img {
     .skills {
         display: none;
     }
+}
+
+/*Portfolio section*/
+
+.portfolioWrapper {
+    padding: 10px;
+    margin: 15%;
+    display: grid;
+    grid-gap: 15px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.349);
+    border: solid white 3px;
+    justify-items: start;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+/*Individual portfolio element styling*/
+.website {
+    display: flex;
+    flex-direction: column;
+    
+    border: solid white 2px;
+}
+
+
+/*Screen that will show on hover*/
+.overlay {
+    position: relative;
+    width: 100%;
+    border: solid white 2px;
+}
+
+
+.hoverDisplay {
+    display: none;
+    padding: 5%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background: rgba(228, 223, 223, 0.63);
+}
+
+/*Adding a class that will layout the technology elements in a centered grid*/
+.iconCentered {
+    padding: 5%;
+    display: grid;
+    grid-auto-flow: column;
+    align-content: center;
+    justify-content: center;
+}
+/*Styling onhover icons*/
+.hoverDisplay img {
+    height: 50px;
+    width: auto;
+    z-index: 4;
+}
+
+/*Styling thumbnail image*/
+.portfolioThumbnail {
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+}
+
+
+/*Formatting description*/
+
+.website p {
+    color: rgba(233, 233, 233, 0.911);
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    padding: 2%;
 }
