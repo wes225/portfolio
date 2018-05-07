@@ -29,6 +29,13 @@ body {
     grid-template-areas: "name name" "job skills" "para skills " "contact contact";
 }
 
+@media screen and (max-width: 480px) {
+    .cardWrapper {
+        padding: 10px;
+        margin: 5%;}
+}
+
+
 .name {
     grid-area: name;
 }
@@ -110,6 +117,14 @@ a:active {
     grid-auto-flow: row;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-template-rows:  auto;
+    min-width: 220px;
+    overflow: scroll;
+}
+
+@media screen and (max-width: 480px) {
+    .portfolioWrapper {
+        padding: 10px;
+        margin: 5%;}
 }
 
 /*Individual portfolio element styling*/
