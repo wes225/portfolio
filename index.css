@@ -7,19 +7,27 @@
 }
 
 body {
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-image: linear-gradient(to bottom, #000000, #1e2227);
     color: rgba(233, 233, 233, 0.911);
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 400;
+    display: grid;
+    grid-template-rows: repeat(auto-fit,minmax(100px,1fr));
+    grid-template-columns: 1fr;
+    grid-gap: 5em;
+    align-content: center;
+    justify-content: start;
 }
 
 /*Card and info section*/
 
 .cardWrapper {
     padding: 10px;
-    margin: 15%;
     box-shadow: 0 0 30px rgba(255, 255, 255, 0.349);
     border: solid white 3px;
     display: grid;
@@ -32,10 +40,18 @@ body {
 @media screen and (max-width: 480px) {
     .cardWrapper {
         padding: 10px;
-        margin: 5%;}
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(auto-fill, minmax(100px,2fr));
+        grid-template-areas: "name " "job " "contact";
+    }
+    .desc {
+        display: none;
+    }
+    .skills {
+        display: none;
+    }
 }
-
-
 .name {
     grid-area: name;
 }
@@ -89,45 +105,28 @@ a:active {
     text-decoration: none;
 }
 
-@media screen and (max-width: 480px) {
-    .cardWrapper {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-areas: "name " "job " "contact ";
-    }
-    .desc {
-        display: none;
-    }
-    .skills {
-        display: none;
-    }
-}
 
 
 /*Portfolio section*/
 
 .portfolioWrapper {
     padding: 10px;
-    margin: 15%;
     display: grid;
     grid-gap: 15px;
     box-shadow: 0 0 30px rgba(255, 255, 255, 0.349);
     border: solid white 3px;
     grid-auto-flow: row;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-template-rows:  auto;
-    min-width: 220px;
-    
+    grid-template-rows: auto;
+    min-width: 170px;
 }
 
 @media screen and (max-width: 480px) {
     .portfolioWrapper {
         padding: 10px;
-        margin: 5%;
-    overflow: scroll;
+        overflow: scroll;
+        -moz-overflow:auto;
     }
-        
 }
 
 /*Individual portfolio element styling*/
@@ -136,7 +135,7 @@ a:active {
     display: flex;
     flex-direction: column;
     border: solid white 2px;
-    min-width: 200px;
+    min-width: 150px;
 }
 
 /*Screen that will show on hover*/
