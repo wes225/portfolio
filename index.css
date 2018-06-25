@@ -7,7 +7,7 @@
 }
 
 body {
-    margin-top: 5%;
+    margin-top: 2%;
     margin-left: 15%;
     margin-right: 15%;
     background-repeat: no-repeat;
@@ -138,6 +138,14 @@ a:active {
     min-width: 150px;
 }
 
+#twitchStreamDesc {
+    padding:5px;
+}
+#TwitchStream{
+    border: solid white 2px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.349);
+    
+}
 /*Screen that will show on hover*/
 
 .overlay {

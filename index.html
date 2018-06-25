@@ -25,11 +25,15 @@
     <h1 class='name'>Ouissem Hammami</h1>
     <h2 class='job'>
       <span class='level'>junior</span> Front-end / iOS developer - Montreal , QC</h2>
-    <p class='desc'>Hi! I'm a junior developer. I like puzzles and problem solving. And food. If you need help in your projects, let me know!</p>
+    <p class='desc'>Hi! I'm a junior developer. I like puzzles and problem solving. And food. If you need help in your projects, let me know!<br>
+       PS: This portolio page is getting old and cramped. It will be soon rebuilt from scratch
+    </p>
+    
     <ul class='skills'>
       <li>html</li>
       <li>css</li>
       <li>javascript</li>
+      <li>react</li>
       <li>jquery</li>
       <li>git</li>
       <li>npm</li>
@@ -56,17 +60,22 @@
 
   <div class="portfolioWrapper">
 
-    <div class='website'>
-      <a class='overlay' target='_blank' href='https://wes225.github.io/TwitchStreams/'>
+    <div class='website' id='TwitchStream'>
+      <a class='overlay' target='_blank' href='https://twitch-streams-wes.herokuapp.com/'>
         <div class='hoverDisplay'>
           <img src="Assets/Icons/html5.png" alt="html5" title: "html 5">
           <img src="Assets/Icons/css3.png" alt="css" title: "css3">
           <img src="Assets/Icons/javascript.png" alt="js" title: "javascript">
           <img src="Assets/Icons/responsive.png" alt="responsive" title: "responsive design">
+          <img src="Assets/Icons/react.png" alt="react" title: "react">
+          <img src="Assets/Icons/responsive.png" alt="responsive" title: "responsive design">
         </div>
         <img class='portfolioThumbnail' src="Assets/Thumbnails/TwitchStreamThumb.jpg" alt="Twitch Stream">
       </a>
-      <p> Displays a list of your favorite streamers, with infos on their status and on what they are streaming if they are live.</p>
+      <div id='twitchStreamDesc'><p> Displays a list of your favorite streamers, with infos on their status and on what they are streaming if they are live.</p>
+      <h3>This is the most advanced project to this day. It is fully built on React/ReactRouter/MaterialUI and deployed to Heroku.</h3></div>
+      
+      
     </div>
 
     <div class='website'>
