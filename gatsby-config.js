@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Ouissem Hammami',
   },
   plugins: ['gatsby-plugin-react-helmet', `gatsby-plugin-sass`, `gatsby-plugin-typography`, {
     resolve: `gatsby-plugin-typography`,
