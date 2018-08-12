@@ -3,9 +3,8 @@ import Link from 'gatsby-link'
 
 const Projects = () => (
   <div>
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
+    <h2>These are the projects I worked on.</h2>
+      <h3>Sorted by newest</h3>
   </div>
 )
 

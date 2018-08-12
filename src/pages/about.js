@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 
 const About = () => (
   <div>
-    <h1>ABOUT</h1>
+    <h1>About</h1>
     <p>I currently work as web integrator for Desjardins. Before that, I worked a
       lot in QA.</p>
       <p>
