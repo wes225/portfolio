@@ -2,11 +2,15 @@ module.exports = {
   siteMetadata: {
     title: 'Ouissem Hammami',
   },
-  plugins: ['gatsby-plugin-react-helmet', `gatsby-plugin-sass`, `gatsby-plugin-typography`, {
+plugins : [
+  'gatsby-plugin-react-helmet',
+  `gatsby-plugin-sass`,
+  `gatsby-plugin-typography`,
+  `gatsby-transformer-json`, {
         resolve: `gatsby-source-filesystem`,
         options: {
-          name: `src`,
-          path: `${__dirname}/src/`,
+          name: `data`,
+          path: `${__dirname}/src/data/`,
         },
       } ,{
     resolve: `gatsby-plugin-typography`,
