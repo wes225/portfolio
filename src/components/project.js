@@ -1,10 +1,10 @@
 import React from 'react'
 
 const Project = ({...props}) => {
-  return console.log(props)||(
-    <a href={props.URL} target="_blank">
-      <h2>{props.Name}</h2>
-      
+  return (
+    <a href={props.liveURL} target="_blank">
+      <h2>{props.name}</h2>
+      <p>{props.description}</p>
       </a>
     
   )
