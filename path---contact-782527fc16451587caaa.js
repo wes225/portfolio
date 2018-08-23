@@ -1,0 +1,2 @@
+webpackJsonp([0xa7f31e1aeaea],{331:function(n,e){n.exports={data:{dataJson:{contacts:[{name:"Linkedin",link:"https://www.linkedin.com/in/ouissem-hammami-10509851/"},{name:"Github",link:"https://github.com/wes225"},{name:"Codepen",link:"https://codepen.io/wes225/"}]}},pathContext:{}}}});
+//# sourceMappingURL=path---contact-782527fc16451587caaa.js.map
