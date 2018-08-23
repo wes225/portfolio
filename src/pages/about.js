@@ -13,7 +13,7 @@ const About = () => (
       <p>
       My favorite stack at the moment is React, and I'm slowly learning about Node and
       GraphQL. I have worked with Webpack, Firebase, ReactRouter and now Gatsby (this
-      portfolio is build on it!)
+      portfolio is built on it!)
       </p><p>
       When I'm not working I'm trying to find a new cool restaurent, or looking at
       crazy expensive coffee machines. Sometimes taking walks or at the Gym.
