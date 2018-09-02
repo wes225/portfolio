@@ -1,8 +1,10 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import PageTransition from 'gatsby-plugin-page-transitions';
+
 
 const About = () => (
-  <div>
+  <PageTransition>
     <h1>About</h1>
     <p>I currently work as web integrator for Desjardins. Before that, I worked a
       lot in QA.</p>
@@ -30,7 +32,7 @@ const About = () => (
 
     </p>
 
-  </div>
+  </PageTransition>
 )
 
 export default About

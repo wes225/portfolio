@@ -4,6 +4,7 @@ module.exports = {
   }, pathPrefix: "/portfolio",
   plugins: [
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-page-transitions',
     `gatsby-plugin-sass`,
     `gatsby-plugin-typography`,
     `gatsby-transformer-json`, {
