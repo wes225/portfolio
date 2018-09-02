@@ -4,8 +4,11 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "emotion": "^9.2.8",
+    "emotion-server": "^9.2.8",
     "gatsby": "^1.9.277",
     "gatsby-link": "^1.6.46",
+    "gatsby-plugin-emotion": "^1.1.17",
     "gatsby-plugin-google-analytics": "^1.0.31",
     "gatsby-plugin-page-transitions": "^1.0.7",
     "gatsby-plugin-react-helmet": "^2.0.11",
@@ -14,9 +17,12 @@
     "gatsby-source-filesystem": "^1.5.39",
     "gatsby-transformer-json": "^1.0.20",
     "node-sass": "^4.9.3",
+    "react-emotion": "^9.2.8",
     "react-helmet": "^5.2.0",
     "react-typography": "^0.16.13",
-    "typography": "^0.16.17"
+    "typography": "^0.16.17",
+    "typography-theme-stardust": "^0.16.14",
+    "typography-theme-twin-peaks": "^0.15.11"
   },
   "keywords": [
     "gatsby"

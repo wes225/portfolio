@@ -8,6 +8,11 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-typography`,
     `gatsby-transformer-json`, {
+      resolve: `gatsby-plugin-emotion`,
+      options: {
+        // Accepts all options defined by `babel-plugin-emotion` plugin.
+      }
+    }, {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `data`,
