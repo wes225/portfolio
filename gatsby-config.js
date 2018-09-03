@@ -6,8 +6,13 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-page-transitions',
     `gatsby-plugin-sass`,
-    `gatsby-plugin-typography`,
-    `gatsby-transformer-json`, {
+    `gatsby-plugin-typography`,`gatsby-plugin-polyfill-io`,
+    `gatsby-transformer-json`,{
+      resolve: `gatsby-plugin-polyfill-io`,
+      options: {
+         features: [`assign`]
+      },
+   }, {
       resolve: `gatsby-plugin-emotion`,
       options: {
         // Accepts all options defined by `babel-plugin-emotion` plugin.

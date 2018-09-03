@@ -7,12 +7,14 @@ import Header from '../components/Header'
 
 const Layout = ({ children, data }) => (
   <div>
+    <script src={"https://cdn.polyfill.io/v2/polyfill.min.js"}></script>
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
       ]}
+      
     />
     <Header siteTitle={data.site.siteMetadata.title} />
     <div
