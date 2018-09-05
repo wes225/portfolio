@@ -9,7 +9,7 @@ const ContactBox = styled('div')`
   display:flex;
   flex-flow:row;
   flex-wrap:wrap;
-  justify-content:center;
+  padding-top:30%;
 }
 
 `

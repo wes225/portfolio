@@ -7,9 +7,10 @@ import styled from 'react-emotion'
 const ProjectWrapper = styled('div')`
 & {
   display:flex;
+  flex:1;
  flex-flow:row;
 flex-wrap: wrap;
-justify-content:space-between;
+justify-content:space-around;
 align-items:flex-start;
 padding:5px;
 margin:5px;
@@ -18,10 +19,15 @@ margin:5px;
 
 const Projects = ({data}) => (
   <PageTransition>
-    <h2>These are the projects I worked on.</h2>
-    <h3>Sorted by newest</h3>
-    <ProjectWrapper>{data.dataJson.projects.map((data,index) =>(<Project key={index} {...data}></Project>))}</ProjectWrapper>
     
+    <ProjectWrapper>
+    {data
+        .dataJson
+        .projects
+        .map((data, index) => (
+          <Project key={index} {...data}></Project>
+        ))}</ProjectWrapper>
+
   </PageTransition>
 )
 

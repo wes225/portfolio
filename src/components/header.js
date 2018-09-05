@@ -24,7 +24,7 @@ const Label = styled('label')`
   width: 100%;
   height: 100%;
   text-align:center;
-  color: rgb(44, 41, 42);;
+  color: rgb(44, 41, 42);
   font-size: 24px;
 }
 &::before, &::after {
@@ -77,19 +77,20 @@ const Label = styled('label')`
 
 `
 const Navbar = styled('div')`
-padding:2% 10% 10% 10%;
+padding:2% 0% 5% 0%;
+width:70%;
 display:flex;
 flex-flow:row;
 flex-wrap: wrap;
-justify-content:space-evenly;
+justify-content:space-between;
+align-self: center;
+
 
 
 `
 
 const Header = ({siteTitle}) => (
-  <div style={{
-    marginBottom: '1.45rem'
-  }}>
+  
     <Navbar>
 
       <Link to="/" style={{
@@ -133,7 +134,7 @@ const Header = ({siteTitle}) => (
 
     </Navbar>
 
-  </div>
+  
 )
 
 export default Header
