@@ -24,6 +24,8 @@ const Label = styled('label')`
   width: 100%;
   height: 100%;
   text-align:center;
+  color: rgb(44, 41, 42);;
+  font-size: 24px;
 }
 &::before, &::after {
   position: absolute;
@@ -75,7 +77,7 @@ const Label = styled('label')`
 
 `
 const Navbar = styled('div')`
-padding:2% 10% 5% 10%;
+padding:2% 10% 10% 10%;
 display:flex;
 flex-flow:row;
 flex-wrap: wrap;

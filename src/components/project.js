@@ -18,11 +18,11 @@ const Box = styled('a')`
     background-color:rgba(0, 0, 0, 0.9);
     h2{
     transition: all 0.3s 0.2s ease;
-    color:rgba(175, 166, 166, 1);
+    color:rgb(247, 247, 247);
     }
     p{
     transition: all 0.3s 0.2s ease;
-    color:rgba(175, 166, 166, 1);}
+    color:rgb(247, 247, 247);}
     }
   }
 
@@ -31,13 +31,13 @@ const Box = styled('a')`
     transition: all 0.3s 0.2s ease;
     font-size: "18px";
     line-height: 1.45;
-    color:black;
+    color:rgb(44, 42, 42);
   }
   p{
     transition: all 0.3s 0.2s ease;
     font-size: "18px";
     line-height: 1.45;
-    color:black;}
+    color:rgb(44, 42, 42);}
   }
 `
 
