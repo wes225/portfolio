@@ -8,6 +8,7 @@ const FancyFooter = styled('footer')`
     width:70%;
     border-top:2px solid black;
     align-self:center;
+    justify-self:flex-end;
     
   
     
