@@ -3,7 +3,7 @@
             "name": "Portfolio",
             "description": "My new portfolio. It was rebuilt using Gatsby.js and react, and I intend to use it as a testing ground for some interactivity.",
             "tech": "[Gatsby, CSS-in-JS, Netlify, Google Analytics]",
-            "liveURL": "",
+            "liveURL": "/",
             "gitURL": "https://github.com/wes225/portfolio"
         },
         {
@@ -22,7 +22,7 @@
             "name": "Email validation",
             "description": "Email validator created as part of the Shopify application challenge.",
             "tech": "React, CSS",
-            "liveURL": "",
+            "liveURL": "https://codepen.io/wes225/pen/jxmpPM",
             "gitURL": "www.google.com"
         }
     ],
