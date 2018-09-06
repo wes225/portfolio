@@ -4,6 +4,7 @@ import styled from 'react-emotion'
 const Link = styled('a')`
 
 &{
+  transition: all 0.3s 0.2s ease;
 min-width:100px;
 min-height:100px;
 width:150px;
@@ -12,8 +13,10 @@ height:150px;
  svg 
  { width:100%;
    height:100%;
+   transition: all 0.3s 0.2s ease;
   
  path{
+   transition: all 0.3s 0.2s ease;
    fill:rgb(44, 41, 42);
  }
   }

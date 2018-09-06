@@ -1,10 +1,23 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import PageTransition from 'gatsby-plugin-page-transitions';
+import styled from 'react-emotion'
 
+
+const Div = styled('div')`
+
+&{
+    margin-right:5%;
+    margin-left:5%;
+    width:100%;
+     
+    
+}
+`
 
 const About = () => (
   <PageTransition>
+    <Div>
     <h1>About</h1>
     <p>I currently work as web integrator for Desjardins. Before that, I worked a
       lot in QA.</p>
@@ -25,13 +38,10 @@ const About = () => (
       <p>
       That should cover it. Or some of it. If you need help with your projects, get in
       touch {< Link
-      to = "/contact"
-      style = {{
-          textDecoration: 'none'
-        }} > here </Link>}
+      to = "/contact"> here </Link>}
 
     </p>
-
+</Div>
   </PageTransition>
 )
 
