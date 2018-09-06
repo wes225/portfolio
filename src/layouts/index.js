@@ -12,6 +12,7 @@ const Bod = styled('div')`
 display:flex;
 flex-direction:column;
 min-height:100vh;
+
 `
 const Div = styled('div')`
 width:70%;

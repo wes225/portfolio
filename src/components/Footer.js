@@ -9,7 +9,15 @@ const FancyFooter = styled('footer')`
     border-top:2px solid black;
     align-self:center;
     justify-self:flex-end;
-    
+ 
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+     /* IE10+ CSS styles go here */
+     position: absolute;
+     margin-top:10%;
+     bottom:20px;
+     left:15%;
+
+}
   
     
 }
