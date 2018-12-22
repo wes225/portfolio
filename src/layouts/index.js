@@ -5,52 +5,65 @@ import Helmet from 'react-helmet'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
-import styled from 'react-emotion'
+import styled, {injectGlobal} from 'react-emotion'
 
+injectGlobal `
+  body {
+    background: blue;
+    display:grid;
+    justify-items:stretch;
+  }
+`
 
-const Bod = styled('div')`
-display:flex;
-flex-direction:column;
-min-height:100vh;
+const Body = styled('div')`
+display:grid;
+height:100%;
+width:100%;
+background-color:orange;
+align-items:center;
+justify-items:center;
 
 `
 const Div = styled('div')`
-width:70%;
-display:flex;
-flex-direction:column;
-align-self:center;
-flex:1;
+
+justify-self:stretch;
+align-self:stretch;
+background-color:green;
+grid-row:2/4;
 `
 
-const Layout = ({ children, data }) => (
-  <Bod>
+const Layout = ({children, data}) => (
+  <Body>
     <script src={"https://cdn.polyfill.io/v2/polyfill.min.js"}></script>
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
-      ]}
-      
-    />
-    <Header siteTitle={data.site.siteMetadata.title} />
+      {
+        name: 'description',
+        content: 'Sample'
+      }, {
+        name: 'keywords',
+        content: 'sample, something'
+      }
+    ]}/>
+    <Header siteTitle={data.site.siteMetadata.title}/>
     <Div>
-    
+
       {children()}
-      
+
     </Div>
     <Footer/>
-    
-  </Bod>
+
+  </Body>
 )
 
 Layout.propTypes = {
-  children: PropTypes.func,
+  children: PropTypes.func
 }
 
 export default Layout
 
-export const query = graphql`
+export const query = graphql `
   query SiteTitleQuery {
     site {
       siteMetadata {

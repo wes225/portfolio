@@ -5,6 +5,8 @@ import styled from 'react-emotion'
 const FancyFooter = styled('footer')`
 
 &{
+    
+ flex:1;
     width:70%;
     border-top:2px solid black;
     align-self:center;

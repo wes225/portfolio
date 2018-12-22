@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'react-emotion'
 
 const Box = styled('a')`
-& {
+&{
   transition: all 0.3s 0.2s ease;
   align-self: flex-start;
   margin:10px;
@@ -37,20 +37,20 @@ const Box = styled('a')`
     transition: all 0.3s 0.2s ease;
     font-size: "18px";
     line-height: 1.45;
-    color:rgb(44, 42, 42);}
-  }
-`
+    color:rgb(44, 42, 42);
+    }
+  `
 
 const Project = ({
   ...props
 }) => {
   return (
-    
-      <Box href={props.liveURL} target="_blank">
-        <h2>{props.name}</h2>
-        <p>{props.description}</p>
-      </Box>
-    
+
+    <Box href={props.liveURL} target="_blank">
+      <h2>{props.name}</h2>
+      <p>{props.description}</p>
+    </Box>
+
   )
 }
 

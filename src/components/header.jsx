@@ -77,9 +77,7 @@ const Label = styled('label')`
 
 `
 const Navbar = styled('div')`
-padding:2% 0% 5% 0%;
-margin-bottom:10px;
-width:70%;
+
 display:flex;
 flex-flow:row;
 flex-wrap: wrap;
