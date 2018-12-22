@@ -3,13 +3,13 @@
             "name": "React Spreadsheet",
             "description": "A spreadsheet built entirely in React/Redux, with optimized rendering",
             "tech": "[React,Redux]",
-            "liveURL": "/",
+            "liveURL": "https://wes225.github.io/react_spreadsheet/",
             "gitURL": "https://wes225.github.io/react_spreadsheet/"
         },{
             "name": "Portfolio",
             "description": "My new portfolio. It was rebuilt using Gatsby.js and React, and I intend to use it as a testing ground for some interactivity.",
             "tech": "[Gatsby, CSS-in-JS, Netlify, Google Analytics]",
-            "liveURL": "/",
+            "liveURL": "#",
             "gitURL": "https://github.com/wes225/portfolio"
         },
         {
