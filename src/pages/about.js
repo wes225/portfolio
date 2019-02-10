@@ -1,8 +1,8 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import PageTransition from 'gatsby-plugin-page-transitions';
-import styled from 'react-emotion'
-
+import styled from '@emotion/styled';
+import Layout from '../components/layout';
 
 const Div = styled('div')`
 
@@ -17,6 +17,7 @@ const Div = styled('div')`
 
 const About = () => (
   <PageTransition>
+    <Layout>
     <Div>
     <h1>About</h1>
     <p>I currently work as web integrator for Desjardins. Before that, I worked a
@@ -42,6 +43,7 @@ const About = () => (
 
     </p>
 </Div>
+</Layout>
   </PageTransition>
 )
 

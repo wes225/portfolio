@@ -1,6 +1,5 @@
 import React from 'react'
-import styled from 'react-emotion'
-
+import styled from '@emotion/styled'
 const Box = styled('a')`
 &{
   transition: all 0.3s 0.2s ease;

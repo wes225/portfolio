@@ -1,7 +1,8 @@
 import React from 'react'
+import Layout from '../components/layout';
 
 import PageTransition from 'gatsby-plugin-page-transitions';
-import styled from 'react-emotion'
+import styled from '@emotion/styled'
 
 
 const Div = styled('div')`
@@ -15,6 +16,7 @@ const Div = styled('div')`
 `
 const IndexPage = () => (
   <PageTransition>
+    <Layout>
     <Div>
     <h1>Hi, I'm Ouissem</h1>
     <p>I like coding web things.</p>
@@ -25,6 +27,7 @@ const IndexPage = () => (
     <p>I haven't actually implemented them yet. Not much CSS either actually. But
       it's getting there!</p>
 </Div>
+</Layout>
   </PageTransition>
 )
 

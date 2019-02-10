@@ -2,7 +2,8 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Project from '../components/Project'
 import PageTransition from 'gatsby-plugin-page-transitions';
-import styled from 'react-emotion'
+import styled from  '@emotion/styled'
+import Layout from '../components/layout';
 
 const ProjectWrapper = styled('div')`
 & {
@@ -19,7 +20,7 @@ margin:5px;
 
 const Projects = ({data}) => (
   <PageTransition>
-    
+    <Layout>
     <ProjectWrapper>
     {data
         .dataJson
@@ -27,7 +28,7 @@ const Projects = ({data}) => (
         .map((data, index) => (
           <Project key={index} {...data}></Project>
         ))}</ProjectWrapper>
-
+</Layout>
   </PageTransition>
 )
 
